@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=air,location_on,search,water_drop" />
+        
+</head>
+
+<body>
+    <div class="container">
+        <div class="inputContainer">
+            <input class="inpBox" type="text" placeholder="Search a City">
+            <button class="subBtn">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </button>
+        </div>
+        <div class="info" style="display: none;">
+            <div class="location_date">
+                <div class="location">
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                    <h4 class="citytxt">Jamnagar</h4>
+                </div>
+                <div class="date">
+                    <h5 class="curdate regular">Wed, 15 Jan 2025</h5>
+                </div>
+            </div>
+            <div class="summary">
+                <img src="weather/clouds.svg" class="imgWeather">
+                <div class="summaryinfo">
+                    <h1 class="temp">32 °C</h1>
+                    <h3 class="cond">Clouds</h3>
+                </div>
+            </div>
+
+            <div class="condContainer">
+                <div class="item">
+                    <span class="material-symbols-outlined">
+                        water_drop
+                    </span>
+                    <div class="conditem">
+                        <h5 class="regular">Humidity</h5>
+                        <h5 class="humidityvalue">55%</h5>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <span class="material-symbols-outlined">
+                        air
+                    </span>
+                    <div class="conditem">
+                        <h5 class="regular">Wind Speed</h5>
+                        <h5 class="windvalue">3 m/s</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecastContainer">
+                <div class="forecast">
+                    <h5 class="forecastdate regular">
+                        15 Jan
+                    </h5>
+                    <img src="weather/thunderstorm.svg" class="forecastimg">
+                    <h5 class="forecasttemp">18 °C</h5>
+                </div>
+
+                <div class="forecast">
+                    <h5 class="forecastdate regular">
+                        15 Jan
+                    </h5>
+                    <img src="weather/thunderstorm.svg" class="forecastimg">
+                    <h5 class="forecasttemp">18 °C</h5>
+                </div>
+
+                <div class="forecast">
+                    <h5 class="forecastdate regular">
+                        15 Jan
+                    </h5>
+                    <img src="weather/thunderstorm.svg" class="forecastimg">
+                    <h5 class="forecasttemp">18 °C</h5>
+                </div>
+
+                <div class="forecast">
+                    <h5 class="forecastdate regular">
+                        15 Jan
+                    </h5>
+                    <img src="weather/thunderstorm.svg" class="forecastimg">
+                    <h5 class="forecasttemp">18 °C</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="searchsec msg">
+            <div>
+                <h1>Search for a City.</h1>
+            </div>
+        </div>
+
+        <div class="notfound msg"  style="display: none;">
+            <div>
+                <h1>Oops! City Not Found.</h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
