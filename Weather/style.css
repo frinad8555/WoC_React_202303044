@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    color: aliceblue;
+}
+
+body {
+    background: url('bgimage.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    height: 100dvh;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.1);
+    backdrop-filter: blur(12px);
+}
+
+.container {
+    border: solid;
+    width: 300px;
+    height: 500px;
+    z-index: 1;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgb(0, 0, 0, 0.3), rgb(255, 255, 255, 0.3));
+    padding: 15px;
+}
+
+.inpBox {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: none;
+    background: transparent;
+    font-weight: 600;
+    background-color: rgb(0, 0, 0, 0.3);
+    outline: none;
+    transition: 0.25s border;
+    padding-right: 40px;
+}
+
+.inpBox:focus {
+    border: 1.5px solid rgb(0, 0, 0, 0.5)
+}
+
+.inpBox::placeholder {
+    color: aliceblue;
+}
+
+.inputContainer {
+    position: relative;
+}
+
+.subBtn {
+    position: absolute;
+    background: none;
+    top: 37%;
+    right: 8px;
+    transform: translateY(-50%);
+    border: none;
+    display: flex;
+    cursor: pointer;
+}
+
+.info {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px
+}
+
+.location_date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgWeather {
+    width: 120px;
+    height: 120px;
+}
+
+.summaryinfo {
+    text-align: end;
+}
+
+.condContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conditem {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.item span {
+    font-size: 30px;
+}
+
+.forecastContainer {
+    display: flex;
+    gap: 12px;
+    overflow: scroll;
+    overflow-y: hidden;
+    padding: 12px;
+}
+
+.forecastContainer::-webkit-scrollbar {
+    height: 8px;
+}
+
+.forecastContainer::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0, 0.15);
+    border-radius: 80px;
+}
+
+.forecastContainer::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0, 0.2);
+    border-radius: 80px;
+}
+
+.forecast {
+    min-width: 70px;
+    background: rgb(255, 255, 255, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.forecast:hover {
+    background: rgb(255, 255, 255, 0.2);
+}
+
+.forecastimg {
+    width: 30px;
+    height: 30px;
+}
+
+.msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    margin-top: 30%;
+}
